@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Museo 3D de defectos espermáticos bovinos — ANDROTEC</title>
+<meta name="description" content="Colección interactiva de morfología espermática bovina para divulgación científica y educación en Andrología." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23103b52%22/><circle cx=%2250%22 cy=%2250%22 r=%2222%22 fill=%22%2337d6c8%22/></svg>" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<main class="museum-shell">
+  <header class="topbar">
+    <div class="brand-lockup">
+      <a class="brand-back" href="index.html" title="Elegir otra especie" aria-label="Elegir otra especie">←</a>
+      <div class="brand-mark" aria-hidden="true"><span></span><i></i></div>
+      <div>
+        <p class="eyebrow">Divulgación científica creativa</p>
+        <h1>ANDROTEC <span>Museo 3D</span></h1>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="species-pill"><i></i> Bovino</span>
+      <span class="model-count">16 modelos educativos</span>
+      <button class="catalog-trigger" type="button" id="catalogTrigger" aria-expanded="false">Catálogo</button>
+    </div>
+  </header>
+
+  <div class="museum-grid">
+    <aside class="catalog-panel" id="catalogPanel">
+      <div class="catalog-heading">
+        <div>
+          <p class="section-kicker">Colección bovina</p>
+          <h2>Explorar modelos</h2>
+        </div>
+        <span id="modelCount">16</span>
+      </div>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput" placeholder="Buscar defecto..." aria-label="Buscar un modelo" />
+      </label>
+      <div class="filter-row" aria-label="Filtrar por región" id="filterRow">
+        <button type="button" class="active" data-filter="Todos">Todos</button>
+        <button type="button" data-filter="Referencia">Referencia</button>
+        <button type="button" data-filter="Cabeza">Cabeza</button>
+        <button type="button" data-filter="Pieza intermedia">Pieza intermedia</button>
+        <button type="button" data-filter="Cola">Cola</button>
+      </div>
+      <div class="specimen-list" id="specimenList"></div>
+    </aside>
+
+    <section class="viewer-stage">
+      <div class="viewer-titlebar">
+        <div>
+          <span class="object-index">OBJETO <span id="objIndex">00</span></span>
+          <h2 id="objTitle">Cargando…</h2>
+        </div>
+        <div class="viewer-actions">
+          <button type="button" id="compareBtn" disabled title="Selecciona un defecto"><span aria-hidden="true">◫</span>Comparar con normal</button>
+        </div>
+      </div>
+      <div class="viewer-layout" id="viewerLayout">
+        <div class="viewer-cell" id="cellPrimary">
+          <div class="model-viewer" id="viewerPrimary" aria-label="Visor 3D">
+            <div class="viewer-grid-lines" aria-hidden="true"></div>
+            <div class="model-loading" id="loadingPrimary" role="status">
+              <div class="loading-orbit"><span></span></div>
+              <strong>Cargando modelo 3D</strong>
+            </div>
+            <div class="model-controls" aria-label="Controles del modelo">
+              <button type="button" data-action="zoomin" title="Acercar">＋</button>
+              <button type="button" data-action="zoomout" title="Alejar">−</button>
+              <button type="button" data-action="reset" title="Restablecer vista">↺</button>
+              <button type="button" data-action="autorotate" title="Rotación automática">◌</button>
+              <button type="button" data-action="fullscreen" title="Pantalla completa">⛶</button>
+            </div>
+          </div>
+        </div>
+        <div class="viewer-cell" id="cellCompare" hidden>
+          <div class="model-viewer" id="viewerCompare" aria-label="Visor 3D de comparación (modelo normal)">
+            <div class="viewer-grid-lines" aria-hidden="true"></div>
+            <span class="compare-label">Normal</span>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-hint"><span class="mouse-icon" aria-hidden="true"></span>Arrastra para girar · Rueda para acercar · Flechas para cambiar</div>
+    </section>
+
+    <aside class="info-panel" id="infoPanel">
+      <div class="info-heading">
+        <div class="category-icon" id="categoryIcon" data-category="Referencia">✓</div>
+        <div>
+          <span id="categoryLabel">Referencia</span>
+          <h2 id="infoTitle">Cargando…</h2>
+        </div>
+      </div>
+      <div class="anatomy-route">
+        <span>Región afectada</span>
+        <strong id="infoRegion"></strong>
+      </div>
+      <section class="info-section">
+        <p class="section-kicker">Descripción morfológica</p>
+        <p id="infoDescripcion"></p>
+      </section>
+      <section class="info-section observe-card">
+        <div class="observe-title"><span aria-hidden="true">◎</span><p class="section-kicker">Qué observar</p></div>
+        <p id="infoObservar"></p>
+      </section>
+      <section class="info-section">
+        <p class="section-kicker">Importancia funcional</p>
+        <p id="infoImportancia"></p>
+      </section>
+      <div class="source-sections">
+        <details class="source-disclosure">
+          <summary><span><i aria-hidden="true">▤</i>Referencias científicas</span><small id="refCount">0</small></summary>
+          <ol class="source-list" id="refList"></ol>
+        </details>
+        <details class="source-disclosure figure-disclosure">
+          <summary><span><i aria-hidden="true">◫</i>Figuras de referencia visual</span><small id="figCount">0</small></summary>
+          <ul class="figure-link-list" id="figList"></ul>
+        </details>
+      </div>
+      <div class="interpretation-note">
+        <strong>Interpretación responsable</strong>
+        <p id="interpretationText"></p>
+      </div>
+      <div class="authors">
+        <span>Proyecto académico</span>
+        <strong>Jimmy Jhoel Rojas · Dilan Fabian Hernández</strong>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="assets/viewer.js"></script>
+<script type="module" src="assets/catalog.js"></script>
+</body>
+</html>

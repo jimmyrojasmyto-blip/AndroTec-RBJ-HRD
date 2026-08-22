@@ -1,0 +1,312 @@
+{
+  "proyecto": "Museo 3D de defectos espermáticos bovinos",
+  "subtitulo": "Divulgación científica creativa — Proyecto AndroTec",
+  "autores": "Jimmy Jhoel Rojas Barquero · Dilan Fabian Hernández Ramírez",
+  "institucion": "Instituto Tecnológico de Costa Rica (ITCR)",
+  "interpretacionResponsable": "La morfología debe evaluarse junto con motilidad, concentración, viabilidad y el contexto reproductivo. Un solo hallazgo no determina por sí mismo la fertilidad del toro.",
+  "modelos": [
+    {
+      "id": "00_Normal",
+      "numero": "00",
+      "titulo": "Espermatozoide bovino normal",
+      "categoria": "Referencia",
+      "region": "Estructura completa",
+      "archivo": "modelos/00_Normal.glb",
+      "descripcion": "Modelo de referencia con cabeza ovalada, acrosoma definido, cuello alineado, pieza intermedia uniforme y flagelo continuo.",
+      "queObservar": "Sigue la transición desde la cabeza hasta la cola y úsala como patrón para comparar proporción, simetría y continuidad.",
+      "importanciaFuncional": "Una morfología normal favorece la motilidad progresiva y la interacción funcional con el ovocito, aunque no garantiza por sí sola la fertilidad.",
+      "referencias": [
+        { "texto": "Sevilla, F., Araya-Zúñiga, I., Salamanca-Carreño, A., Silvestre, M. A., Rodríguez, J., Matamoros, K., Molina-Montero, R., Carranza-Rojas, L. C., Roldan, E. R. S., & Valverde, A. (2025). Effect of age and scrotal circumference on sperm morphology in Brahman bulls using a modified fixation technique. Frontiers in Veterinary Science, 12, 1626425. https://doi.org/10.3389/fvets.2025.1626425", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2025.1626425/full" },
+        { "texto": "Barth, A. D. (2018). Review: The use of bull breeding soundness evaluation to identify subfertile and infertile bulls. Animal, 12(s1), s158–s164. https://doi.org/10.1017/S1751731118000538", "href": "https://doi.org/10.1017/S1751731118000538" },
+        { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" },
+        { "texto": "Johnson, W. H. (1997). The significance to bull fertility of morphologically abnormal sperm. Veterinary Clinics of North America: Food Animal Practice, 13(2), 255–270. https://doi.org/10.1016/S0749-0720(15)30339-X", "href": "https://doi.org/10.1016/S0749-0720(15)30339-X" }
+      ],
+      "figuras": [
+        { "titulo": "Figura 1 — Morfología espermática de toros Brahman en Costa Rica", "fuente": "Sevilla et al. (2025), Frontiers in Veterinary Science", "href": "https://www.frontiersin.org/files/Articles/1626425/xml-images/fvets-12-1626425-g001.webp" },
+        { "titulo": "Espermatozoide bovino normal", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/norm.jpg" }
+      ]
+    },
+    {
+      "id": "01_Cabeza_piriforme",
+      "numero": "01",
+      "titulo": "Cabeza piriforme",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/01_Cabeza_piriforme.glb",
+      "descripcion": "La cabeza adopta una silueta semejante a una pera: más ancha en la región anterior y marcadamente estrecha hacia el cuello.",
+      "queObservar": "Compara el contorno lateral con el modelo normal, especialmente el estrechamiento posterior y la pérdida de simetría ovalada.",
+      "importanciaFuncional": "Puede reflejar alteraciones durante la formación espermática y asociarse con menor competencia funcional.",
+      "referencias": [
+        { "texto": "Thundathil, J., Palasz, A. T., Mapletoft, R. J., & Barth, A. D. (1999). An investigation of the fertilizing characteristics of pyriform-shaped bovine spermatozoa. Animal Reproduction Science, 57(1–2), 35–50. https://doi.org/10.1016/S0378-4320(99)00058-5", "href": "https://doi.org/10.1016/S0378-4320(99)00058-5" },
+        { "texto": "Shojaei Saadi, H. A., van Riemsdijk, E., Dance, A. L., Rajamanickam, G. D., Kastelic, J. P., & Thundathil, J. C. (2013). Proteins associated with critical sperm functions and sperm head shape are differentially expressed in morphologically abnormal bovine sperm induced by scrotal insulation. Journal of Proteomics, 82, 64–80. https://doi.org/10.1016/j.jprot.2013.02.027", "href": "https://doi.org/10.1016/j.jprot.2013.02.027" }
+      ],
+      "figuras": [
+        { "titulo": "Figura de anomalías bovinas — panel de cabeza piriforme", "fuente": "Semen de toros Friesian Holstein, tinción de Williams, 1000×", "href": "https://www.researchgate.net/figure/Sperm-abnormality-Williams-stains-1000x-magnification-a-normal-sperm-b-Abaxial-c_fig1_281267649" },
+        { "titulo": "Cabeza piriforme bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/pyr.jpg" }
+      ]
+    },
+    {
+      "id": "02_Gota_citoplasmatica_proximal",
+      "numero": "02",
+      "titulo": "Gota citoplasmática proximal",
+      "categoria": "Pieza intermedia",
+      "region": "Cuello y pieza intermedia proximal",
+      "archivo": "modelos/02_Gota_citoplasmatica_proximal.glb",
+      "descripcion": "Remanente citoplasmático redondeado localizado muy cerca de la cabeza, junto al inicio de la pieza intermedia.",
+      "queObservar": "Identifica la pequeña masa adherida al extremo proximal; no debe confundirse con el exceso citoplasmático grande y lobulado.",
+      "importanciaFuncional": "Su persistencia puede relacionarse con inmadurez espermática y alteraciones de la función de membrana.",
+      "referencias": [
+        { "texto": "Thundathil, J., Palasz, A. T., Barth, A. D., & Mapletoft, R. J. (2001). The use of in vitro fertilization techniques to investigate the fertilizing ability of bovine sperm with proximal cytoplasmic droplets. Animal Reproduction Science, 65(3–4), 181–192. https://doi.org/10.1016/S0378-4320(00)00231-1", "href": "https://doi.org/10.1016/S0378-4320(00)00231-1" },
+        { "texto": "Carreira, J. T., Mingoti, G. Z., Rodrigues, L. H., Silva, C., Perri, S. H. V., & Koivisto, M. B. (2012). Impact of proximal cytoplasmic droplets on quality traits and in-vitro embryo production efficiency of cryopreserved bull spermatozoa. Acta Veterinaria Scandinavica, 54, 1. https://doi.org/10.1186/1751-0147-54-1", "href": "https://doi.org/10.1186/1751-0147-54-1" }
+      ],
+      "figuras": [
+        { "titulo": "Gota citoplasmática proximal bovina", "fuente": "Integris Cattle — Sperm Morphology Images", "href": "https://integriscattle.com/wp-content/uploads/photo-gallery/Proximal_Cytoplasmic_Droplets/thumb/proximal_cytoplasmic_droplet_87a.png?bwg=1583899064" },
+        { "titulo": "Gota citoplasmática proximal", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/cytodrop.jpg" }
+      ]
+    },
+    {
+      "id": "03_Cola_enrollada",
+      "numero": "03",
+      "titulo": "Cola enrollada",
+      "categoria": "Cola",
+      "region": "Flagelo",
+      "archivo": "modelos/03_Cola_enrollada.glb",
+      "descripcion": "El flagelo pierde su trayectoria continua y forma una espiral compacta hacia su porción distal.",
+      "queObservar": "Recorre la cola desde la pieza intermedia: el diámetro disminuye gradualmente antes de formar el enrollamiento.",
+      "importanciaFuncional": "La deformación puede impedir un patrón de movimiento progresivo eficiente.",
+      "referencias": [
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" },
+        { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
+      ],
+      "figuras": [
+        { "titulo": "Cola enrollada bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/coiled.jpg" },
+        { "titulo": "Fotoplaca de defectos del flagelo bovino", "fuente": "University of Wisconsin–Madison — colas enrolladas, dobladas y corkscrew", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/tertiary_abnormalities.jpg" }
+      ]
+    },
+    {
+      "id": "04_Cabeza_redonda_sin_acrosoma",
+      "numero": "04",
+      "titulo": "Cabeza redonda sin acrosoma",
+      "categoria": "Cabeza",
+      "region": "Cabeza y acrosoma",
+      "archivo": "modelos/04_Cabeza_redonda_sin_acrosoma.glb",
+      "descripcion": "La cabeza pierde su forma ovalada y se vuelve redondeada, sin una cubierta acrosomal reconocible.",
+      "queObservar": "Gira el modelo y confirma la forma casi esférica y la ausencia de la región anterior diferenciada por color.",
+      "importanciaFuncional": "La ausencia del acrosoma compromete mecanismos esenciales para la interacción y penetración del ovocito.",
+      "referencias": [
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Cabeza redonda bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/roundhead.jpg" },
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — espectro de alteraciones de cabeza y acrosoma", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "05_Cabeza_macrocefalica",
+      "numero": "05",
+      "titulo": "Cabeza macrocefálica",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/05_Cabeza_macrocefalica.glb",
+      "descripcion": "La cabeza conserva una organización general reconocible, pero presenta un volumen claramente mayor al patrón normal.",
+      "queObservar": "Usa la comparación simultánea para evaluar el aumento de longitud, ancho y volumen respecto al modelo de referencia.",
+      "importanciaFuncional": "Puede acompañar alteraciones nucleares o de condensación de la cromatina y requiere interpretación conjunta con otras pruebas.",
+      "referencias": [
+        { "texto": "Revay, T., Kopp, C., Flyckt, A., Taponen, J., Ijäs, R., Nagy, S., Kovacs, A., Rens, W., Rath, D., Hidas, A., Taylor, J. F., & Andersson, M. (2010). Diploid spermatozoa caused by failure of the second meiotic division in a bull. Theriogenology, 73(4), 421–428. https://doi.org/10.1016/j.theriogenology.2009.09.025", "href": "https://doi.org/10.1016/j.theriogenology.2009.09.025" },
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Cabeza macrocefálica bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/macro.jpg" },
+        { "titulo": "Figura 1 — normal y macrocefálica en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+      ]
+    },
+    {
+      "id": "06_Cabeza_microcefalica",
+      "numero": "06",
+      "titulo": "Cabeza microcefálica",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/06_Cabeza_microcefalica.glb",
+      "descripcion": "La cabeza es notablemente más pequeña que la referencia, mientras el resto de la estructura conserva sus proporciones generales.",
+      "queObservar": "Compara la relación entre el tamaño de la cabeza, el cuello y la pieza intermedia.",
+      "importanciaFuncional": "Puede relacionarse con contenido nuclear anormal o desarrollo espermático incompleto.",
+      "referencias": [
+        { "texto": "Chenoweth, P. J. (2005). Genetic sperm defects. Theriogenology, 64(3), 457–468. https://doi.org/10.1016/j.theriogenology.2005.05.005", "href": "https://doi.org/10.1016/j.theriogenology.2005.05.005" },
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Cabeza microcefálica bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/micro_stump.jpg" },
+        { "titulo": "Figura 1 — microcefalia en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+      ]
+    },
+    {
+      "id": "07_Cabeza_amorfa",
+      "numero": "07",
+      "titulo": "Cabeza amorfa",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/07_Cabeza_amorfa.glb",
+      "descripcion": "El contorno de la cabeza es irregular y carece de una geometría ovalada o simétrica claramente definida.",
+      "queObservar": "Examina los bordes desde varios ángulos para localizar asimetrías, abultamientos y cambios abruptos del perfil.",
+      "importanciaFuncional": "Las anomalías severas de forma pueden asociarse con alteraciones del núcleo y del acrosoma.",
+      "referencias": [
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" },
+        { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
+      ],
+      "figuras": [
+        { "titulo": "Figura 1 — contorno anormal de la cabeza en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" },
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — formas teratoides y contornos irregulares", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "08_Cabeza_vacuolada",
+      "numero": "08",
+      "titulo": "Cabeza vacuolada",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/08_Cabeza_vacuolada.glb",
+      "descripcion": "La superficie nuclear muestra varias vacuolas didácticamente visibles como depresiones o espacios delimitados.",
+      "queObservar": "Acércate a la cabeza y rota ligeramente el modelo para distinguir la distribución y el tamaño de las vacuolas.",
+      "importanciaFuncional": "La interpretación depende del tamaño, número y método de observación; puede asociarse con alteraciones nucleares.",
+      "referencias": [
+        { "texto": "Pilip, R., Del Campo, M. R., Barth, A. D., & Mapletoft, R. J. (1996). In vitro fertilizing characteristics of bovine spermatozoa with multiple nuclear vacuoles: A case study. Theriogenology, 46(1), 1–12. https://doi.org/10.1016/0093-691X(96)00136-7", "href": "https://doi.org/10.1016/0093-691X(96)00136-7" },
+        { "texto": "Thundathil, J., Palasz, A. T., Barth, A. D., & Mapletoft, R. J. (1998). Fertilization characteristics and in vitro embryo production with bovine sperm containing multiple nuclear vacuoles. Molecular Reproduction and Development, 50(3), 328–333. https://doi.org/10.1002/(SICI)1098-2795(199807)50:3<328::AID-MRD9>3.0.CO;2-L", "href": "https://pubmed.ncbi.nlm.nih.gov/9621309/" }
+      ],
+      "figuras": [
+        { "titulo": "Vacuolas nucleares o defecto diadem/crater en bovino", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/diadem.jpg" },
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — vacuolas nucleares y defecto crater/diadem", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "09_Cabeza_fusiforme",
+      "numero": "09",
+      "titulo": "Cabeza fusiforme",
+      "categoria": "Cabeza",
+      "region": "Cabeza",
+      "archivo": "modelos/09_Cabeza_fusiforme.glb",
+      "descripcion": "La cabeza se alarga y estrecha, produciendo un perfil semejante a un huso con extremos más afinados.",
+      "queObservar": "Contrasta la relación longitud-ancho y la forma de ambos extremos con la cabeza ovalada normal.",
+      "importanciaFuncional": "La modificación del perfil puede indicar una espermiogénesis anormal y afectar la función celular.",
+      "referencias": [
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" },
+        { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
+      ],
+      "figuras": [
+        { "titulo": "Cabeza bovina estrecha y fusiforme (tapered)", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/tapered1.jpg" },
+        { "titulo": "Figura 1 — cabeza tapered en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+      ]
+    },
+    {
+      "id": "10_Acrosoma_pequeno",
+      "numero": "10",
+      "titulo": "Acrosoma pequeño",
+      "categoria": "Cabeza",
+      "region": "Acrosoma",
+      "archivo": "modelos/10_Acrosoma_pequeno.glb",
+      "descripcion": "La cubierta acrosomal ocupa una proporción anterior menor de la cabeza que en el modelo normal.",
+      "queObservar": "Utiliza el cambio de color para comparar el límite posterior del acrosoma normal y del reducido.",
+      "importanciaFuncional": "Una cobertura acrosomal insuficiente puede comprometer procesos necesarios para la fecundación.",
+      "referencias": [
+        { "texto": "Barth, A. D. (1986). The knobbed acrosome defect in beef bulls. Canadian Veterinary Journal, 27(10), 379–384.", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1680339/" },
+        { "texto": "Thundathil, J., Meyer, R., Palasz, A. T., Barth, A. D., & Mapletoft, R. J. (2000). Effect of the knobbed acrosome defect in bovine sperm on IVF and embryo production. Theriogenology, 54(6), 921–934. https://doi.org/10.1016/S0093-691X(00)00402-7", "href": "https://doi.org/10.1016/S0093-691X(00)00402-7" },
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Desarrollo del defecto de acrosoma con nudo", "fuente": "Perry et al. (2021), figura cortesía de A. D. Barth", "href": "https://www.researchgate.net/figure/Images-of-the-developing-knobbed-acrosome-defect-Courtesy-of-Professor-Albert-Barth_fig2_351872156" },
+        { "titulo": "Alteración acrosomal bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/arruf.jpg" }
+      ]
+    },
+    {
+      "id": "11_Pieza_intermedia_doblada",
+      "numero": "11",
+      "titulo": "Pieza intermedia doblada",
+      "categoria": "Pieza intermedia",
+      "region": "Pieza intermedia",
+      "archivo": "modelos/11_Pieza_intermedia_doblada.glb",
+      "descripcion": "La pieza intermedia presenta una angulación visible que desvía el eje del flagelo respecto a la cabeza.",
+      "queObservar": "Mira la continuidad de la vaina mitocondrial a través de la curva y compara la alineación cabeza-cola.",
+      "importanciaFuncional": "La angulación puede interferir con la transmisión de la fuerza y con el desplazamiento progresivo.",
+      "referencias": [
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Cola doblada bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/bent_tail.jpg" },
+        { "titulo": "Fotoplaca de piezas dobladas, DAG y corkscrew", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/tertiary_abnormalities.jpg" },
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — bent principal pieces, bowed midpieces y corkscrew", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "12_Insercion_anomala",
+      "numero": "12",
+      "titulo": "Inserción anómala",
+      "categoria": "Pieza intermedia",
+      "region": "Unión de la cabeza con el flagelo",
+      "archivo": "modelos/12_Insercion_anomala.glb",
+      "descripcion": "El complejo de implantación se conecta de manera excéntrica, desplazando la pieza intermedia del eje central de la cabeza.",
+      "queObservar": "Acércate a la unión y verifica cómo el cuello se integra en una posición lateral, no simplemente superpuesta.",
+      "importanciaFuncional": "La inserción abaxial aislada no necesariamente reduce la fertilidad; su interpretación cambia cuando aparece junto con colas accesorias u otros defectos.",
+      "referencias": [
+        { "texto": "Barth, A. D. (1989). Abaxial tail attachment of bovine spermatozoa and its effect on fertility. Canadian Veterinary Journal, 30, 656–662.", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1681166/" },
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Figura de anomalías bovinas — inserción abaxial", "fuente": "Semen de toros Friesian Holstein, tinción de Williams, 1000×", "href": "https://www.researchgate.net/figure/Sperm-abnormality-Williams-stains-1000x-magnification-a-normal-sperm-b-Abaxial-c_fig1_281267649" },
+        { "titulo": "Figura 1 — inserción abaxial en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+      ]
+    },
+    {
+      "id": "13_Pieza_intermedia_gruesa",
+      "numero": "13",
+      "titulo": "Pieza intermedia gruesa",
+      "categoria": "Pieza intermedia",
+      "region": "Pieza intermedia",
+      "archivo": "modelos/13_Pieza_intermedia_gruesa.glb",
+      "descripcion": "La pieza intermedia muestra un aumento amplio y progresivo de diámetro, con la vaina mitocondrial adaptada al engrosamiento.",
+      "queObservar": "Compara el diámetro central con ambos extremos y con la pieza intermedia uniforme del modelo normal.",
+      "importanciaFuncional": "Puede reflejar una organización anormal de la pieza intermedia y afectar la eficiencia del movimiento.",
+      "referencias": [
+        { "texto": "Barth, A., Perry, V. E. A., Hamilton, L. E., Sutovsky, P., & Oko, R. (2025). Photomicrographic Glossary of the Features of Bovine Sperm Cell Abnormalities. En Abnormal Morphology of Bovine Spermatozoa (Advances in Anatomy, Embryology and Cell Biology, Vol. 240, pp. 165–202). Springer. https://doi.org/10.1007/978-3-031-70126-9_4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ],
+      "figuras": [
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — piezas intermedias engrosadas, hinchadas y pseudodroplet", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "14_Pieza_intermedia_fina",
+      "numero": "14",
+      "titulo": "Pieza intermedia fina",
+      "categoria": "Pieza intermedia",
+      "region": "Pieza intermedia",
+      "archivo": "modelos/14_Pieza_intermedia_fina.glb",
+      "descripcion": "La pieza intermedia reduce gradualmente su diámetro y conserva transiciones suaves hacia el cuello y la cola.",
+      "queObservar": "Examina la zona central, donde el adelgazamiento es máximo, y compárala con el grosor normal.",
+      "importanciaFuncional": "Una pieza intermedia reducida puede indicar alteraciones estructurales relacionadas con la generación y transmisión de energía.",
+      "referencias": [
+        { "texto": "Barth, A., Perry, V. E. A., Hamilton, L. E., Sutovsky, P., & Oko, R. (2025). Photomicrographic Glossary of the Features of Bovine Sperm Cell Abnormalities. En Abnormal Morphology of Bovine Spermatozoa (Advances in Anatomy, Embryology and Cell Biology, Vol. 240, pp. 165–202). Springer. https://doi.org/10.1007/978-3-031-70126-9_4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ],
+      "figuras": [
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — aplasia segmentaria de la vaina mitocondrial", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    },
+    {
+      "id": "15_Exceso_citoplasma_residual",
+      "numero": "15",
+      "titulo": "Exceso de citoplasma residual",
+      "categoria": "Pieza intermedia",
+      "region": "Pieza intermedia proximal",
+      "archivo": "modelos/15_Exceso_citoplasma_residual.glb",
+      "descripcion": "Una masa citoplasmática grande, irregular y lobulada envuelve parcialmente el tercio proximal de la pieza intermedia.",
+      "queObservar": "Diferénciala de la gota proximal: aquí el volumen es mayor, alargado y está formado por varios lóbulos unidos.",
+      "importanciaFuncional": "La retención excesiva de citoplasma puede relacionarse con maduración incompleta y estrés celular.",
+      "referencias": [
+        { "texto": "Amann, R. P., Seidel, G. E., & Mortimer, R. G. (2000). Fertilizing potential in vitro of semen from young beef bulls containing a high or low percentage of sperm with a proximal droplet. Theriogenology, 54(9), 1499–1515. https://doi.org/10.1016/S0093-691X(00)00470-2", "href": "https://doi.org/10.1016/S0093-691X(00)00470-2" },
+        { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
+      ],
+      "figuras": [
+        { "titulo": "Gotas citoplasmáticas en migración", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/translocating3.jpg" },
+        { "titulo": "Galería bovina de gotas citoplasmáticas", "fuente": "Integris Cattle — Sperm Morphology Images", "href": "https://integriscattle.com/2020/03/11/sperm-morphology-images/" },
+        { "titulo": "Glosario fotomicrográfico bovino 2025 — distal droplets y pseudodroplet", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+      ]
+    }
+  ]
+}
