@@ -466,6 +466,7 @@ svg { display: block; }
 .viewer-layout.compare { grid-template-columns: 1fr 1fr; }
 
 .viewer-cell { min-height: 0; display: flex; }
+.viewer-cell[hidden] { display: none; }
 
 .model-viewer {
   position: relative;
@@ -478,7 +479,7 @@ svg { display: block; }
   border: 1px solid var(--line);
   min-height: 320px;
 }
-.model-viewer canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.model-viewer canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; touch-action: none; }
 
 .viewer-grid-lines {
   position: absolute;
