@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#103b52" />
+<title>Sin conexión — AndroTec Museo 3D</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23103b52%22/><circle cx=%2250%22 cy=%2250%22 r=%2222%22 fill=%22%2337d6c8%22/></svg>" />
+<style>
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background: #0b2b3d;
+    color: #eaf6f7;
+    font: 400 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 18vh 24px 24px;
+    text-align: center;
+  }
+  .mark {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: #103b52;
+    display: grid;
+    place-items: center;
+  }
+  .mark i {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #37d6c8;
+    display: block;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 8px; }
+  p { color: #9fb9c2; margin: 0 0 24px; }
+  button {
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(55, 214, 200, .5);
+    background: #103b52;
+    color: #eaf6f7;
+    font: 600 15px/1 system-ui, sans-serif;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"><i></i></div>
+  <h1>Sin conexión</h1>
+  <p>No hay conexión a internet y esta parte del museo todavía no se ha guardado en el dispositivo. Abre una sección mientras tengas conexión para poder consultarla después sin datos.</p>
+  <button type="button" onclick="location.reload()">Reintentar</button>
+</main>
+</body>
+</html>
