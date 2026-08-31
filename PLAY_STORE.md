@@ -81,6 +81,9 @@ Como ese dominio raíz todavía no existe, hay que crearlo:
 1. Creá un repo público llamado **`jimmyrojasmyto-blip.github.io`**.
 2. Dentro, agregá el archivo `.well-known/assetlinks.json` con el contenido
    del `assetlinks.json` que vino en el `.zip` de PWABuilder.
+   **Agregá también un archivo vacío llamado `.nojekyll` en la raíz** — sin
+   él, GitHub Pages ignora las carpetas que empiezan con punto y el
+   `.well-known/` devolvería 404 (este repo ya lo tiene).
 3. Settings → Pages → Deploy from branch `main` / root.
 4. Esperá unos minutos y verificá que responda:
    ```bash
