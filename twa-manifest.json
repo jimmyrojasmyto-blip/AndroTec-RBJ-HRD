@@ -1,0 +1,46 @@
+{
+  "packageId": "io.github.jimmyrojasmyto_blip.androtec",
+  "host": "jimmyrojasmyto-blip.github.io",
+  "name": "AndroTec — Museo 3D de morfología espermática",
+  "launcherName": "AndroTec 3D",
+  "display": "standalone",
+  "orientation": "default",
+  "themeColor": "#103b52",
+  "themeColorDark": "#0b2b3d",
+  "navigationColor": "#0b2b3d",
+  "navigationColorDark": "#0b2b3d",
+  "navigationDividerColor": "#0b2b3d",
+  "navigationDividerColorDark": "#0b2b3d",
+  "backgroundColor": "#0b2b3d",
+  "enableNotifications": false,
+  "startUrl": "/AndroTec-RBJ-HRD/index.html",
+  "iconUrl": "https://jimmyrojasmyto-blip.github.io/AndroTec-RBJ-HRD/icons/icon-512.png",
+  "maskableIconUrl": "https://jimmyrojasmyto-blip.github.io/AndroTec-RBJ-HRD/icons/icon-maskable-512.png",
+  "monochromeIconUrl": "",
+  "shortcuts": [
+    {
+      "name": "Colección bovina",
+      "shortName": "Bovino",
+      "url": "/AndroTec-RBJ-HRD/bovino.html",
+      "chosenIconUrl": "https://jimmyrojasmyto-blip.github.io/AndroTec-RBJ-HRD/icons/icon-192.png"
+    }
+  ],
+  "webManifestUrl": "https://jimmyrojasmyto-blip.github.io/AndroTec-RBJ-HRD/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://jimmyrojasmyto-blip.github.io/AndroTec-RBJ-HRD/",
+  "minSdkVersion": 21,
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "generatorApp": "PWABuilder"
+}
