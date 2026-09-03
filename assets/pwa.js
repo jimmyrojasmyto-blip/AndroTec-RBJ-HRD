@@ -82,32 +82,60 @@
     );
   }
 
-  function onInstallClick() {
+  function fireNativePrompt() {
+    var p = deferredPrompt;
+    deferredPrompt = null;
+    p.prompt();
+    if (p.userChoice && p.userChoice.finally) {
+      p.userChoice.finally(function () {});
+    }
+  }
+
+  function onInstallClick(ev) {
+    var btn = ev && ev.currentTarget;
+
+    // Caso normal (Chrome / Edge de escritorio o Android): un clic y listo.
     if (deferredPrompt) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.finally(function () {
-        deferredPrompt = null;
-      });
+      fireNativePrompt();
       return;
     }
-    // Sin evento nativo (iOS Safari, Firefox, o el navegador aun no lo ofrece):
-    // mostramos instrucciones manuales.
+
+    // El evento puede llegar con unos milisegundos de retraso justo despues
+    // de cargar. Esperamos un poco antes de mostrar instrucciones.
+    if (btn) btn.disabled = true;
+    var waited = 0;
+    var timer = setInterval(function () {
+      waited += 150;
+      if (deferredPrompt) {
+        clearInterval(timer);
+        if (btn) btn.disabled = false;
+        fireNativePrompt();
+      } else if (waited >= 1800) {
+        clearInterval(timer);
+        if (btn) btn.disabled = false;
+        showManualHelp();
+      }
+    }, 150);
+  }
+
+  function showManualHelp() {
     if (iOS()) {
       showBox(
-        "Para instalar en iPhone o iPad: toca el boton Compartir de Safari y elige " +
-          "“Agregar a inicio”.",
+        "En iPhone o iPad no se puede instalar con un solo toque (lo limita Apple). " +
+          "Abre esta pagina en Safari, toca el boton Compartir y elige " +
+          "«Agregar a inicio».",
         null,
         null,
-        "Como instalar la app"
+        "Instalar en iPhone / iPad"
       );
     } else {
       showBox(
-        "Abre el menu del navegador (los tres puntos) y elige “Instalar aplicacion” " +
-          "o “Agregar a pantalla de inicio”. Si no aparece, interactua unos segundos con " +
-          "la pagina y vuelve a intentar.",
+        "Este navegador no ofrecio la instalacion directa. Abre la pagina en " +
+          "Google Chrome o Microsoft Edge (en computadora o Android) y este boton " +
+          "instalara la app de un solo clic.",
         null,
         null,
-        "Como instalar la app"
+        "Instalar la app"
       );
     }
   }

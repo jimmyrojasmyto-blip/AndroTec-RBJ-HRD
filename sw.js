@@ -11,7 +11,7 @@
  * actualización en los dispositivos ya instalados.
  */
 
-const SHELL_VERSION = "v3";
+const SHELL_VERSION = "v4";
 const SHELL_CACHE = `androtec-shell-${SHELL_VERSION}`;
 const MODEL_CACHE = "androtec-models-v1";
 const VENDOR_CACHE = "androtec-vendor-v1";
