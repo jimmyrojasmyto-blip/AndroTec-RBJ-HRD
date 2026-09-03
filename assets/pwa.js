@@ -118,6 +118,12 @@
     }, 150);
   }
 
+  function isChromiumDesktop() {
+    var ua = navigator.userAgent;
+    var mobile = /Android|iPhone|iPad|iPod/i.test(ua);
+    return !mobile && /\bChrome\/|\bEdg\//.test(ua);
+  }
+
   function showManualHelp() {
     if (iOS()) {
       showBox(
@@ -128,11 +134,20 @@
         null,
         "Instalar en iPhone / iPad"
       );
+    } else if (isChromiumDesktop()) {
+      showBox(
+        "Instalala desde el navegador: haz clic en el icono de instalar de la barra " +
+          "de direcciones (a la derecha, un monitor con una flecha hacia abajo), o abre " +
+          "el menu (··· o ⋮) → Aplicaciones → «Instalar este sitio como una aplicacion». " +
+          "Si ya la instalaste antes, buscala en edge://apps o chrome://apps.",
+        null,
+        null,
+        "Instalar la app"
+      );
     } else {
       showBox(
-        "Este navegador no ofrecio la instalacion directa. Abre la pagina en " +
-          "Google Chrome o Microsoft Edge (en computadora o Android) y este boton " +
-          "instalara la app de un solo clic.",
+        "Este navegador no ofrece la instalacion. Abre la pagina en Google Chrome o " +
+          "Microsoft Edge (en computadora o Android) para instalarla.",
         null,
         null,
         "Instalar la app"
