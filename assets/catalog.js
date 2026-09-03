@@ -47,6 +47,8 @@ async function init() {
   state.data = await res.json();
   state.models = state.data.modelos;
   interpretationText.textContent = state.data.interpretacionResponsable;
+  const scopeEl = el("collectionScope");
+  if (scopeEl && state.data.alcance) scopeEl.textContent = state.data.alcance;
 
   primaryViewer = new Viewer3D(document.getElementById("viewerPrimary"));
 

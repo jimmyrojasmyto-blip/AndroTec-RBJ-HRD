@@ -3,7 +3,8 @@
   "subtitulo": "Divulgación científica creativa — Proyecto AndroTec",
   "autores": "Jimmy Jhoel Rojas Barquero · Dilan Fabian Hernández Ramírez",
   "institucion": "Instituto Tecnológico de Costa Rica (ITCR)",
-  "interpretacionResponsable": "La morfología debe evaluarse junto con motilidad, concentración, viabilidad y el contexto reproductivo. Un solo hallazgo no determina por sí mismo la fertilidad del toro.",
+  "interpretacionResponsable": "La morfología debe evaluarse junto con motilidad, concentración, viabilidad y el contexto reproductivo. Un solo hallazgo no determina por sí mismo la fertilidad del toro; del mismo modo, una morfología aparentemente normal no permite inferir por sí sola la motilidad ni la fertilidad.",
+  "alcance": "Colección didáctica: selección no exhaustiva de anomalías morfológicas descritas en el espermatozoide bovino, elegida con fines de enseñanza. Dirigida principalmente a estudiantes y a personal técnico en formación.",
   "modelos": [
     {
       "id": "00_Normal",
@@ -14,7 +15,7 @@
       "archivo": "modelos/00_Normal.glb",
       "descripcion": "Modelo de referencia con cabeza ovalada, acrosoma definido, cuello alineado, pieza intermedia uniforme y flagelo continuo.",
       "queObservar": "Sigue la transición desde la cabeza hasta la cola y úsala como patrón para comparar proporción, simetría y continuidad.",
-      "importanciaFuncional": "Una morfología normal favorece la motilidad progresiva y la interacción funcional con el ovocito, aunque no garantiza por sí sola la fertilidad.",
+      "importanciaFuncional": "Una morfología normal es deseable, pero por sí sola no permite inferir la motilidad ni la fertilidad del reproductor: ambas se valoran con pruebas específicas y dentro del contexto reproductivo completo.",
       "referencias": [
         { "texto": "Sevilla, F., Araya-Zúñiga, I., Salamanca-Carreño, A., Silvestre, M. A., Rodríguez, J., Matamoros, K., Molina-Montero, R., Carranza-Rojas, L. C., Roldan, E. R. S., & Valverde, A. (2025). Effect of age and scrotal circumference on sperm morphology in Brahman bulls using a modified fixation technique. Frontiers in Veterinary Science, 12, 1626425. https://doi.org/10.3389/fvets.2025.1626425", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2025.1626425/full" },
         { "texto": "Barth, A. D. (2018). Review: The use of bull breeding soundness evaluation to identify subfertile and infertile bulls. Animal, 12(s1), s158–s164. https://doi.org/10.1017/S1751731118000538", "href": "https://doi.org/10.1017/S1751731118000538" },
@@ -73,7 +74,7 @@
       "archivo": "modelos/03_Cola_enrollada.glb",
       "descripcion": "El flagelo pierde su trayectoria continua y forma una espiral compacta hacia su porción distal.",
       "queObservar": "Recorre la cola desde la pieza intermedia: el diámetro disminuye gradualmente antes de formar el enrollamiento.",
-      "importanciaFuncional": "La deformación puede impedir un patrón de movimiento progresivo eficiente.",
+      "importanciaFuncional": "La deformación puede dificultar un patrón de movimiento progresivo eficiente; su alcance depende de la proporción de espermatozoides afectados.",
       "referencias": [
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" },
         { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
@@ -90,10 +91,12 @@
       "categoria": "Cabeza",
       "region": "Cabeza y acrosoma",
       "archivo": "modelos/04_Cabeza_redonda_sin_acrosoma.glb",
-      "descripcion": "La cabeza pierde su forma ovalada y se vuelve redondeada, sin una cubierta acrosomal reconocible.",
+      "descripcion": "La cabeza pierde su forma ovalada y se vuelve redondeada, sin una cubierta acrosomal reconocible. En el toro se describe como un defecto poco frecuente, a menudo de base genética.",
       "queObservar": "Gira el modelo y confirma la forma casi esférica y la ausencia de la región anterior diferenciada por color.",
-      "importanciaFuncional": "La ausencia del acrosoma compromete mecanismos esenciales para la interacción y penetración del ovocito.",
+      "importanciaFuncional": "El acrosoma participa en la interacción con la zona pelúcida; su ausencia se asocia con una capacidad fecundante muy reducida. En bovinos se documenta como un hallazgo infrecuente y habitualmente de origen genético.",
       "referencias": [
+        { "texto": "Chenoweth, P. J. (2005). Genetic sperm defects. Theriogenology, 64(3), 457–468. https://doi.org/10.1016/j.theriogenology.2005.05.005", "href": "https://doi.org/10.1016/j.theriogenology.2005.05.005" },
+        { "texto": "Barth, A., Perry, V. E. A., Hamilton, L. E., Sutovsky, P., & Oko, R. (2025). Photomicrographic Glossary of the Features of Bovine Sperm Cell Abnormalities. En Abnormal Morphology of Bovine Spermatozoa (Advances in Anatomy, Embryology and Cell Biology, Vol. 240, pp. 165–202). Springer. https://doi.org/10.1007/978-3-031-70126-9_4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" },
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
       ],
       "figuras": [
@@ -165,9 +168,9 @@
       "categoria": "Cabeza",
       "region": "Cabeza",
       "archivo": "modelos/08_Cabeza_vacuolada.glb",
-      "descripcion": "La superficie nuclear muestra varias vacuolas didácticamente visibles como depresiones o espacios delimitados.",
-      "queObservar": "Acércate a la cabeza y rota ligeramente el modelo para distinguir la distribución y el tamaño de las vacuolas.",
-      "importanciaFuncional": "La interpretación depende del tamaño, número y método de observación; puede asociarse con alteraciones nucleares.",
+      "descripcion": "Se representan varias vacuolas nucleares en la región de la cabeza. Aclaración: en el modelo 3D se muestran de forma didáctica como depresiones en la superficie; en realidad son estructuras intranucleares y no necesariamente corresponden a una hendidura externa literal de la cabeza espermática.",
+      "queObservar": "Acércate a la cabeza y rota ligeramente el modelo para distinguir la distribución y el tamaño de las vacuolas, recordando que su representación es esquemática.",
+      "importanciaFuncional": "La interpretación depende del tamaño, número y método de observación; puede asociarse con alteraciones nucleares y debe valorarse junto con el resto del análisis.",
       "referencias": [
         { "texto": "Pilip, R., Del Campo, M. R., Barth, A. D., & Mapletoft, R. J. (1996). In vitro fertilizing characteristics of bovine spermatozoa with multiple nuclear vacuoles: A case study. Theriogenology, 46(1), 1–12. https://doi.org/10.1016/0093-691X(96)00136-7", "href": "https://doi.org/10.1016/0093-691X(96)00136-7" },
         { "texto": "Thundathil, J., Palasz, A. T., Barth, A. D., & Mapletoft, R. J. (1998). Fertilization characteristics and in vitro embryo production with bovine sperm containing multiple nuclear vacuoles. Molecular Reproduction and Development, 50(3), 328–333. https://doi.org/10.1002/(SICI)1098-2795(199807)50:3<328::AID-MRD9>3.0.CO;2-L", "href": "https://pubmed.ncbi.nlm.nih.gov/9621309/" }
@@ -186,7 +189,7 @@
       "archivo": "modelos/09_Cabeza_fusiforme.glb",
       "descripcion": "La cabeza se alarga y estrecha, produciendo un perfil semejante a un huso con extremos más afinados.",
       "queObservar": "Contrasta la relación longitud-ancho y la forma de ambos extremos con la cabeza ovalada normal.",
-      "importanciaFuncional": "La modificación del perfil puede indicar una espermiogénesis anormal y afectar la función celular.",
+      "importanciaFuncional": "La modificación del perfil puede indicar una espermiogénesis anormal; su repercusión funcional debe valorarse junto con el resto del análisis.",
       "referencias": [
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" },
         { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
@@ -199,13 +202,13 @@
     {
       "id": "10_Acrosoma_pequeno",
       "numero": "10",
-      "titulo": "Acrosoma pequeño",
+      "titulo": "Acrosoma con nudo (knobbed acrosome)",
       "categoria": "Cabeza",
       "region": "Acrosoma",
       "archivo": "modelos/10_Acrosoma_pequeno.glb",
-      "descripcion": "La cubierta acrosomal ocupa una proporción anterior menor de la cabeza que en el modelo normal.",
-      "queObservar": "Utiliza el cambio de color para comparar el límite posterior del acrosoma normal y del reducido.",
-      "importanciaFuncional": "Una cobertura acrosomal insuficiente puede comprometer procesos necesarios para la fecundación.",
+      "descripcion": "El acrosoma presenta un engrosamiento o repliegue en su borde apical que forma un \"nudo\" o protrusión en el extremo anterior de la cabeza, en lugar de una cubierta lisa y uniforme.",
+      "queObservar": "Fíjate en el margen anterior del acrosoma: busca el reborde engrosado o la protuberancia apical y compáralo con el borde liso y continuo del modelo normal.",
+      "importanciaFuncional": "El defecto de acrosoma con nudo se ha asociado con una menor capacidad fecundante; su repercusión depende de la proporción de espermatozoides afectados y debe interpretarse junto con el resto del espermograma.",
       "referencias": [
         { "texto": "Barth, A. D. (1986). The knobbed acrosome defect in beef bulls. Canadian Veterinary Journal, 27(10), 379–384.", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1680339/" },
         { "texto": "Thundathil, J., Meyer, R., Palasz, A. T., Barth, A. D., & Mapletoft, R. J. (2000). Effect of the knobbed acrosome defect in bovine sperm on IVF and embryo production. Theriogenology, 54(6), 921–934. https://doi.org/10.1016/S0093-691X(00)00402-7", "href": "https://doi.org/10.1016/S0093-691X(00)00402-7" },
@@ -238,13 +241,13 @@
     {
       "id": "12_Insercion_anomala",
       "numero": "12",
-      "titulo": "Inserción anómala",
+      "titulo": "Inserción abaxial",
       "categoria": "Pieza intermedia",
       "region": "Unión de la cabeza con el flagelo",
       "archivo": "modelos/12_Insercion_anomala.glb",
-      "descripcion": "El complejo de implantación se conecta de manera excéntrica, desplazando la pieza intermedia del eje central de la cabeza.",
-      "queObservar": "Acércate a la unión y verifica cómo el cuello se integra en una posición lateral, no simplemente superpuesta.",
-      "importanciaFuncional": "La inserción abaxial aislada no necesariamente reduce la fertilidad; su interpretación cambia cuando aparece junto con colas accesorias u otros defectos.",
+      "descripcion": "El flagelo se implanta de forma excéntrica respecto al eje mayor de la cabeza (inserción abaxial). Es un hallazgo frecuente en el toro y, cuando aparece de forma aislada, suele considerarse una variante y no un defecto.",
+      "queObservar": "Acércate a la unión cabeza-cuello y observa que la pieza intermedia arranca desplazada hacia un lado del eje central, sin otras alteraciones asociadas.",
+      "importanciaFuncional": "La inserción abaxial aislada no tiene una reducción demostrada de la fertilidad y suele clasificarse como variante o defecto menor. Su relevancia aumenta cuando se presenta en proporciones altas o junto con otras alteraciones (colas accesorias, dobleces de la pieza intermedia).",
       "referencias": [
         { "texto": "Barth, A. D. (1989). Abaxial tail attachment of bovine spermatozoa and its effect on fertility. Canadian Veterinary Journal, 30, 656–662.", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1681166/" },
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
@@ -263,7 +266,7 @@
       "archivo": "modelos/13_Pieza_intermedia_gruesa.glb",
       "descripcion": "La pieza intermedia muestra un aumento amplio y progresivo de diámetro, con la vaina mitocondrial adaptada al engrosamiento.",
       "queObservar": "Compara el diámetro central con ambos extremos y con la pieza intermedia uniforme del modelo normal.",
-      "importanciaFuncional": "Puede reflejar una organización anormal de la pieza intermedia y afectar la eficiencia del movimiento.",
+      "importanciaFuncional": "Puede reflejar una organización anormal de la pieza intermedia y podría repercutir en la eficiencia del movimiento.",
       "referencias": [
         { "texto": "Barth, A., Perry, V. E. A., Hamilton, L. E., Sutovsky, P., & Oko, R. (2025). Photomicrographic Glossary of the Features of Bovine Sperm Cell Abnormalities. En Abnormal Morphology of Bovine Spermatozoa (Advances in Anatomy, Embryology and Cell Biology, Vol. 240, pp. 165–202). Springer. https://doi.org/10.1007/978-3-031-70126-9_4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
       ],

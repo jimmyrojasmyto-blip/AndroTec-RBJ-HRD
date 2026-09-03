@@ -1,22 +1,22 @@
 /* Service worker del Museo 3D AndroTec.
  *
- * Estrategia:
- *  - App shell (HTML, CSS, JS, JSON, iconos): precache + stale-while-revalidate.
- *  - Modelos .glb (~52 MB en total): cache-first bajo demanda, en su propia
- *    caché, para no descargar los 16 modelos de golpe.
- *  - three.js desde cdn.jsdelivr.net: cache-first en su propia caché, así el
- *    visor 3D también funciona sin conexión tras la primera carga en línea.
+ * Estrategia (offline completo):
+ *  - App shell (HTML, CSS, JS, JSON, iconos y la libreria three.js incluida
+ *    localmente en assets/vendor/): se precachea en la instalacion.
+ *  - Los 16 modelos .glb (~52 MB) tambien se precachean en la instalacion,
+ *    para que toda la coleccion quede disponible sin conexion desde el primer
+ *    uso. Esto hace que la instalacion descargue ~52 MB una sola vez.
+ *  - No se usa ningun recurso externo (ni CDN); todo es del mismo origen.
  *
  * Al cambiar cualquier archivo del shell, sube SHELL_VERSION para forzar la
- * actualización en los dispositivos ya instalados.
+ * actualizacion en los dispositivos ya instalados.
  */
 
-const SHELL_VERSION = "v5";
+const SHELL_VERSION = "v6";
 const SHELL_CACHE = `androtec-shell-${SHELL_VERSION}`;
-const MODEL_CACHE = "androtec-models-v1";
-const VENDOR_CACHE = "androtec-vendor-v1";
+const MODEL_CACHE = "androtec-models-v2";
 
-const KNOWN_CACHES = new Set([SHELL_CACHE, MODEL_CACHE, VENDOR_CACHE]);
+const KNOWN_CACHES = new Set([SHELL_CACHE, MODEL_CACHE]);
 
 const SHELL_ASSETS = [
   "./",
@@ -28,26 +28,53 @@ const SHELL_ASSETS = [
   "./assets/style.css",
   "./assets/viewer.js",
   "./assets/catalog.js",
+  "./assets/pwa.js",
   "./data/models.json",
+  "./assets/vendor/three/build/three.module.js",
+  "./assets/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+  "./assets/vendor/three/examples/jsm/controls/OrbitControls.js",
+  "./assets/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
   "./icons/apple-touch-icon.png",
 ];
 
+const MODEL_ASSETS = [
+  "00_Normal",
+  "01_Cabeza_piriforme",
+  "02_Gota_citoplasmatica_proximal",
+  "03_Cola_enrollada",
+  "04_Cabeza_redonda_sin_acrosoma",
+  "05_Cabeza_macrocefalica",
+  "06_Cabeza_microcefalica",
+  "07_Cabeza_amorfa",
+  "08_Cabeza_vacuolada",
+  "09_Cabeza_fusiforme",
+  "10_Acrosoma_pequeno",
+  "11_Pieza_intermedia_doblada",
+  "12_Insercion_anomala",
+  "13_Pieza_intermedia_gruesa",
+  "14_Pieza_intermedia_fina",
+  "15_Exceso_citoplasma_residual",
+].map((n) => `./modelos/${n}.glb`);
+
+async function precacheTolerant(cacheName, urls) {
+  const cache = await caches.open(cacheName);
+  await Promise.all(
+    urls.map((url) =>
+      cache.add(new Request(url, { cache: "reload" })).catch((err) => {
+        console.warn("[sw] no se pudo precachear", url, err);
+      })
+    )
+  );
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
-      const cache = await caches.open(SHELL_CACHE);
-      // addAll aborta todo si un archivo falla; añadimos uno a uno para ser
-      // tolerantes (p. ej. si algún icono opcional cambia de nombre).
-      await Promise.all(
-        SHELL_ASSETS.map((url) =>
-          cache.add(new Request(url, { cache: "reload" })).catch((err) => {
-            console.warn("[sw] no se pudo precachear", url, err);
-          })
-        )
-      );
+      await precacheTolerant(SHELL_CACHE, SHELL_ASSETS);
+      await precacheTolerant(MODEL_CACHE, MODEL_ASSETS);
     })()
   );
 });
@@ -69,13 +96,11 @@ self.addEventListener("message", (event) => {
 });
 
 function isModelRequest(url) {
-  return url.origin === self.location.origin &&
+  return (
+    url.origin === self.location.origin &&
     url.pathname.includes("/modelos/") &&
-    url.pathname.endsWith(".glb");
-}
-
-function isVendorRequest(url) {
-  return url.hostname === "cdn.jsdelivr.net";
+    url.pathname.endsWith(".glb")
+  );
 }
 
 async function cacheFirst(request, cacheName) {
@@ -83,9 +108,7 @@ async function cacheFirst(request, cacheName) {
   const hit = await cache.match(request);
   if (hit) return hit;
   const response = await fetch(request);
-  if (response && (response.ok || response.type === "opaque")) {
-    cache.put(request, response.clone());
-  }
+  if (response && response.ok) cache.put(request, response.clone());
   return response;
 }
 
@@ -124,18 +147,12 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
 
   const url = new URL(request.url);
-
-  if (isVendorRequest(url)) {
-    event.respondWith(cacheFirst(request, VENDOR_CACHE));
-    return;
-  }
+  if (url.origin !== self.location.origin) return;
 
   if (isModelRequest(url)) {
     event.respondWith(cacheFirst(request, MODEL_CACHE));
     return;
   }
-
-  if (url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {
     event.respondWith(handleNavigation(request));
