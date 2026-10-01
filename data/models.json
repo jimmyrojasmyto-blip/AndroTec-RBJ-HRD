@@ -42,8 +42,7 @@
         { "texto": "Shojaei Saadi, H. A., van Riemsdijk, E., Dance, A. L., Rajamanickam, G. D., Kastelic, J. P., & Thundathil, J. C. (2013). Proteins associated with critical sperm functions and sperm head shape are differentially expressed in morphologically abnormal bovine sperm induced by scrotal insulation. Journal of Proteomics, 82, 64–80. https://doi.org/10.1016/j.jprot.2013.02.027", "href": "https://doi.org/10.1016/j.jprot.2013.02.027" }
       ],
       "figuras": [
-        { "titulo": "Figura de anomalías bovinas — panel de cabeza piriforme", "fuente": "Semen de toros Friesian Holstein, tinción de Williams, 1000×", "href": "https://www.researchgate.net/figure/Sperm-abnormality-Williams-stains-1000x-magnification-a-normal-sperm-b-Abaxial-c_fig1_281267649" },
-        { "titulo": "Cabeza piriforme bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/pyr.jpg" }
+        { "titulo": "Cabeza piriforme — microscopía de contraste de fases", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/piriforme_33.jpg" }
       ]
     },
     {
@@ -61,8 +60,8 @@
         { "texto": "Carreira, J. T., Mingoti, G. Z., Rodrigues, L. H., Silva, C., Perri, S. H. V., & Koivisto, M. B. (2012). Impact of proximal cytoplasmic droplets on quality traits and in-vitro embryo production efficiency of cryopreserved bull spermatozoa. Acta Veterinaria Scandinavica, 54, 1. https://doi.org/10.1186/1751-0147-54-1", "href": "https://doi.org/10.1186/1751-0147-54-1" }
       ],
       "figuras": [
-        { "titulo": "Gota citoplasmática proximal bovina", "fuente": "Integris Cattle — Sperm Morphology Images", "href": "https://integriscattle.com/wp-content/uploads/photo-gallery/Proximal_Cytoplasmic_Droplets/thumb/proximal_cytoplasmic_droplet_87a.png?bwg=1583899064" },
-        { "titulo": "Gota citoplasmática proximal", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/cytodrop.jpg" }
+        { "titulo": "Gota citoplasmática proximal — ejemplo 1", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/gota_20.jpg" },
+        { "titulo": "Gota citoplasmática proximal — ejemplo 2", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/gota_29.jpg" }
       ]
     },
     {
@@ -80,8 +79,8 @@
         { "texto": "Nöthling, J. O., & Irons, P. C. (2008). A simple multidimensional system for the recording and interpretation of sperm morphology in bulls. Theriogenology, 69(5), 603–611. https://doi.org/10.1016/j.theriogenology.2007.11.007", "href": "https://doi.org/10.1016/j.theriogenology.2007.11.007" }
       ],
       "figuras": [
-        { "titulo": "Cola enrollada bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/coiled.jpg" },
-        { "titulo": "Fotoplaca de defectos del flagelo bovino", "fuente": "University of Wisconsin–Madison — colas enrolladas, dobladas y corkscrew", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/tertiary_abnormalities.jpg" }
+        { "titulo": "Cola enrollada — ejemplo 1", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/enrollada_02.jpg" },
+        { "titulo": "Cola enrollada — ejemplo 2", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/enrollada_03.jpg" }
       ]
     },
     {
@@ -138,8 +137,8 @@
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
       ],
       "figuras": [
-        { "titulo": "Cabeza microcefálica bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/micro_stump.jpg" },
-        { "titulo": "Figura 1 — microcefalia en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+        { "titulo": "Microcefalia — ejemplo 1", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/microcefalia_05.jpg" },
+        { "titulo": "Microcefalia — ejemplo 2", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/microcefalia_28.jpg" }
       ]
     },
     {
@@ -233,9 +232,8 @@
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
       ],
       "figuras": [
-        { "titulo": "Cola doblada bovina", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/species/bovine/bent_tail.jpg" },
-        { "titulo": "Fotoplaca de piezas dobladas, DAG y corkscrew", "fuente": "University of Wisconsin–Madison — Morphology of Bull Spermatozoa", "href": "https://www.ansci.wisc.edu/jjp1/ansci_repro/lab/procedures/sperm/tertiary_abnormalities.jpg" },
-        { "titulo": "Glosario fotomicrográfico bovino 2025 — bent principal pieces, bowed midpieces y corkscrew", "fuente": "Barth, Perry, Hamilton, Sutovsky y Oko (2025), capítulo 4", "href": "https://link.springer.com/chapter/10.1007/978-3-031-70126-9_4" }
+        { "titulo": "Pieza media distal doblada — ejemplo 1", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/doblada_07.jpg" },
+        { "titulo": "Pieza media distal doblada — ejemplo 2", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/doblada_19.jpg" }
       ]
     },
     {
@@ -253,8 +251,7 @@
         { "texto": "Perry, V. E. A. (2021). The Role of Sperm Morphology Standards in the Laboratory Assessment of Bull Fertility in Australia. Frontiers in Veterinary Science, 8, 672058. https://doi.org/10.3389/fvets.2021.672058", "href": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.672058/full" }
       ],
       "figuras": [
-        { "titulo": "Figura de anomalías bovinas — inserción abaxial", "fuente": "Semen de toros Friesian Holstein, tinción de Williams, 1000×", "href": "https://www.researchgate.net/figure/Sperm-abnormality-Williams-stains-1000x-magnification-a-normal-sperm-b-Abaxial-c_fig1_281267649" },
-        { "titulo": "Figura 1 — inserción abaxial en toros", "fuente": "Kusumawati et al. (2023), Animals", "href": "https://www.researchgate.net/figure/Sperm-head-morphological-defects-were-found-in-the-bulls-abaxial-a-knobbed-acrosome_fig1_372739582" }
+        { "titulo": "Inserción abaxial — microscopía de contraste de fases", "fuente": "Laboratorio AndroTEC (ITCR) — fotografía propia", "imagen": "assets/laboratorio/abaxial_34.jpg" }
       ]
     },
     {

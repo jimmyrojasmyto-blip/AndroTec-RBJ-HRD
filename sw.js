@@ -12,7 +12,7 @@
  * actualizacion en los dispositivos ya instalados.
  */
 
-const SHELL_VERSION = "v6";
+const SHELL_VERSION = "v7";
 const SHELL_CACHE = `androtec-shell-${SHELL_VERSION}`;
 const MODEL_CACHE = "androtec-models-v2";
 
@@ -38,6 +38,16 @@ const SHELL_ASSETS = [
   "./icons/icon-512.png",
   "./icons/icon-maskable-512.png",
   "./icons/apple-touch-icon.png",
+  "./assets/laboratorio/piriforme_33.jpg",
+  "./assets/laboratorio/gota_20.jpg",
+  "./assets/laboratorio/gota_29.jpg",
+  "./assets/laboratorio/enrollada_02.jpg",
+  "./assets/laboratorio/enrollada_03.jpg",
+  "./assets/laboratorio/microcefalia_05.jpg",
+  "./assets/laboratorio/microcefalia_28.jpg",
+  "./assets/laboratorio/doblada_07.jpg",
+  "./assets/laboratorio/doblada_19.jpg",
+  "./assets/laboratorio/abaxial_34.jpg",
 ];
 
 const MODEL_ASSETS = [

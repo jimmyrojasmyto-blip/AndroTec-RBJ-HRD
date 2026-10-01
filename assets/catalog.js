@@ -132,10 +132,22 @@ async function selectByIndex(index, opts = {}) {
 
   figCount.textContent = model.figuras.length;
   figList.innerHTML = model.figuras
-    .map(
-      (f) => `<li><a href="${f.href}" target="_blank" rel="noreferrer"><strong>${escapeHtml(f.titulo)}</strong><small>${escapeHtml(f.fuente)}</small><span aria-hidden="true">Abrir figura ↗</span></a></li>`
+    .map((f) =>
+      f.imagen
+        ? `<li class="figure-local">
+            <button type="button" class="figure-thumb" data-imagen="${f.imagen}" data-titulo="${escapeHtml(f.titulo)}" data-fuente="${escapeHtml(f.fuente)}">
+              <img src="${f.imagen}" alt="${escapeHtml(f.titulo)}" loading="lazy" />
+              <span><strong>${escapeHtml(f.titulo)}</strong><small>${escapeHtml(f.fuente)}</small></span>
+            </button>
+          </li>`
+        : `<li><a href="${f.href}" target="_blank" rel="noreferrer"><strong>${escapeHtml(f.titulo)}</strong><small>${escapeHtml(f.fuente)}</small><span aria-hidden="true">Abrir figura ↗</span></a></li>`
     )
     .join("");
+  [...figList.querySelectorAll(".figure-thumb")].forEach((btn) => {
+    btn.addEventListener("click", () =>
+      openFigureLightbox(btn.dataset.imagen, btn.dataset.titulo, btn.dataset.fuente)
+    );
+  });
 
   compareBtn.disabled = model.numero === "00";
   compareBtn.title = model.numero === "00" ? "Selecciona un defecto" : "Comparar con el modelo normal";
@@ -165,6 +177,35 @@ function escapeHtml(str) {
   div.textContent = str;
   return div.innerHTML;
 }
+
+const figureLightbox = el("figureLightbox");
+const figureLightboxImg = el("figureLightboxImg");
+const figureLightboxTitulo = el("figureLightboxTitulo");
+const figureLightboxFuente = el("figureLightboxFuente");
+const figureLightboxClose = el("figureLightboxClose");
+
+function openFigureLightbox(imagen, titulo, fuente) {
+  if (!figureLightbox) return;
+  figureLightboxImg.src = imagen;
+  figureLightboxImg.alt = titulo;
+  figureLightboxTitulo.textContent = titulo;
+  figureLightboxFuente.textContent = fuente;
+  figureLightbox.classList.add("open");
+}
+
+function closeFigureLightbox() {
+  if (figureLightbox) figureLightbox.classList.remove("open");
+}
+
+if (figureLightboxClose) figureLightboxClose.addEventListener("click", closeFigureLightbox);
+if (figureLightbox) {
+  figureLightbox.addEventListener("click", (e) => {
+    if (e.target === figureLightbox) closeFigureLightbox();
+  });
+}
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeFigureLightbox();
+});
 
 function setCompare(on) {
   state.compareOn = on;
